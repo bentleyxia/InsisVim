@@ -27,7 +27,7 @@ TODO
 
 ## 🛠 Installation
 
-`npx zx https://insisvim.github.io/install.mjs`
+`npx zx https://raw.githubusercontent.com/bentleyxia/InsisVim/main/install.mjs`
 
 ## License
 
