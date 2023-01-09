@@ -15,6 +15,10 @@ M.getTSEnsureList = function()
     parserSet["go"] = true
   end
 
+  if cfg.clangd and cfg.clangd.enable then
+    parserSet["clangd"] = true
+  end
+
   if cfg.lua and cfg.lua.enable then
     parserSet["lua"] = true
   end
