@@ -127,7 +127,7 @@ blue("");
 blue(`${lang.startDownload}`);
 
 // red(await $`pwd`);
-await $`git clone --depth 1 https://github.com/nshen/insisVim ${nvimDir}`;
+await $`git clone --depth 1 https://github.com/bentleyxia/insisVim ${nvimDir}`;
 
 blue("");
 green(`${lang.downloadSuccessful}`);

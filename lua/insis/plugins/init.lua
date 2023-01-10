@@ -37,6 +37,13 @@ return {
       require("insis.plugins.lualine")
     end,
   },
+  -- copilot
+  {
+    "github/copilot.vim",
+    config = function()
+      require("insis.plugins.copilot")
+    end,
+  },
 
   -- telescope
   -- telescope extensions
