@@ -66,6 +66,7 @@ return {
       require("insis.plugins.alpha")
     end,
   },
+
   -- treesitter
   {
     "nvim-treesitter/nvim-treesitter",
@@ -78,13 +79,13 @@ return {
     end,
   },
   { "p00f/nvim-ts-rainbow", after = "nvim-treesitter" },
-  { "JoosepAlviste/nvim-ts-context-commentstring", after = "nvim-treesitter" }, -- comment
   { "windwp/nvim-ts-autotag", after = "nvim-treesitter" },
   { "nvim-treesitter/nvim-treesitter-refactor", after = { "nvim-treesitter" } },
   { "nvim-treesitter/nvim-treesitter-textobjects", after = "nvim-treesitter" },
   { "RRethy/nvim-treesitter-endwise", after = "nvim-treesitter" },
 
   -- Comment
+  { "JoosepAlviste/nvim-ts-context-commentstring" },
   {
     "numToStr/Comment.nvim",
     config = function()
@@ -169,6 +170,7 @@ return {
   -- Installer
   { "williamboman/mason.nvim" },
   { "williamboman/mason-lspconfig.nvim" },
+  { "WhoIsSethDaniel/mason-tool-installer.nvim" },
   -- Lspconfig
   { "neovim/nvim-lspconfig" },
   -- Completion engine

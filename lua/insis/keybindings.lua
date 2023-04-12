@@ -33,14 +33,13 @@ keymap({ "n", "v" }, keys.n_v_5k, "5k")
 keymap({ "n", "v" }, keys.n_v_10j, "10j")
 keymap({ "n", "v" }, keys.n_v_10k, "10k")
 
--- magic search
+-- very magic search mode
 if cfg.enable_very_magic_search then
   keymap({ "n", "v" }, "/", "/\\v", {
     remap = false,
     silent = false,
   })
-else
-  keymap({ "n", "v" }, "/", "/", {
+  keymap("c", "%s/", "%s/\\v", {
     remap = false,
     silent = false,
   })
@@ -82,8 +81,8 @@ if cfg.s_windows ~= nil and cfg.s_windows.enable then
   keymap("n", skey.jump_right, "<C-w>l")
   keymap("n", skey.width_decrease, ":vertical resize -10<CR>")
   keymap("n", skey.width_increase, ":vertical resize +10<CR>")
-  keymap("n", skey.height_decrease, ":vertical resize -10<CR>")
-  keymap("n", skey.height_increase, ":vertical resize +10<CR>")
+  keymap("n", skey.height_decrease, ":horizontal resize -10<CR>")
+  keymap("n", skey.height_increase, ":horizontal resize +10<CR>")
   keymap("n", skey.size_equal, "<C-w>=")
 end
 
